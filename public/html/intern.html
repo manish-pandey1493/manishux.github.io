@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/visamate.css">
+    <link rel="stylesheet" href="/public/css/about.css">
+    <title>VisaMate - Manish Pandey</title>
+</head>
+<body>
+
+    <div id="cursor-move-blur"></div>
+    <!-- <button id="lightmode-btn">
+        <div>
+            <i id="moon" class="ri-moon-clear-line"></i>
+            <i id="sun" class="ri-sun-line"></i>
+        </div>
+    </button> -->
+    <button id="btntotop">
+        <i class="ri-arrow-up-s-line"></i>
+    </button>
+    <aside>
+        <div class="aside-center">
+            <nav>
+                <div class="upper-nav">
+                    <div class="clock-center">
+                        <div id="navbarNav">
+                            <div class="clockanalog">
+                              <div class="hand hour" data-hour-hand></div>
+                              <div class="hand minute" data-minute-hand></div>
+                              <div class="hand second" data-second-hand></div>
+                              <div class="number number1">1</div>
+                              <div class="number number2">2</div>
+                              <div class="number number3">3</div>
+                              <div class="number number4">4</div>
+                              <div class="number number5">5</div>
+                              <div class="number number6">6</div>
+                              <div class="number number7">7</div>
+                              <div class="number number8">8</div>
+                              <div class="number number9">9</div>
+                              <div class="number number10">10</div>
+                              <div class="number number11">11</div>
+                              <div class="number number12">12</div>
+                            </div>
+                        </div>
+                        <div class="logo-name">
+                            <h3>manish pandey</h3>
+                        </div>
+                    </div>  
+                    <div class="nav-items">
+                        <svg class="svg_2" onclick="hideMenu()"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(229,229,229,1)"></path></svg>
+                        <ul>
+                            <!-- <li>
+                                <a class="active-tab" href="">
+                                    Home
+                                </a>
+                            </li> -->
+                            <li><a class="active-tab" href="/public/html/index.html">UX Projects</a></li>
+                            <li><a href="/public/html/webdesign.html">Templates</a></li>
+                            <li><a href="/public/html/resume.html">Resume</a></li>
+                            <li><a href="/public/html/about.html">About Me</a></li>
+                        </ul>
+                    </div>  
+                    <svg class="svg_1" onclick="openMenu()"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z" fill="rgba(236,234,234,1)"></path></svg>   
+                </div>
+                <div class="socials-link">
+                    <a href="">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-mail-send-line"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-github-line"></i>
+                    </a>   
+                </div>
+            </nav>
+        </div>  
+    </aside>
+
+    <main id="main-content">
+        <section id="banner-fullvh" class="container">
+            <div class="img-vh" > 
+                <img src="/images/Intern/fusemachines.jpeg" 
+                alt="" 
+                class="img-intern" data-tilt data-tilt-speed="1000">
+            </div>
+            <div class="main-parallax">
+                <div class="content">
+                    <div class="img-vh">
+                      <h2 class="fuse-title">
+                        I was fortunate to have the opportunity to join Fusemachines as a 
+                        UI/UX designer intern. During my internship , I was able to explore
+                        various design principles and participate in design challenges presented to us. 
+                        This experience provided me with valuable opportunities for professional growth 
+                        and development in the field of UI/UX design.
+                      </h2>
+                    </div>
+                </div>
+                <hr class="spacer">
+                <div class="content-2">
+                    <section class="gallery container">
+                        <div class="grid-gallery container">
+                            <div class="grid-gallery-items">
+                                <div class="img-wrapper">
+                                    <img src="/images/Intern/fuse-1.jpg" alt="" class="img-gallery">
+                                </div>
+                            </div>
+                            <div class="grid-gallery-items">
+                                <div class="img-wrapper">
+                                    <img src="/images/Intern/fuse-2.jpg" alt="" class="img-gallery">
+                                </div>
+                            </div>
+                            <div class="grid-gallery-items">
+                                <div class="img-wrapper">
+                                    <img src="/images/Intern/fuse-3.jpeg" alt="" class="img-gallery">
+                                </div>
+                            </div>
+                            <div class="grid-gallery-items">
+                                <div class="img-wrapper">
+                                    <img src="/images/Intern/fuse-4.jpg" alt="" class="img-gallery">
+                                </div>
+                            </div>
+                            <div class="grid-gallery-items">
+                                <div class="img-wrapper">
+                                    <img src="/images/Intern/fuse-5.jpg" alt="" class="img-gallery">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section id="design-challenge" class="container">
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Design Challenge I Completed
+            </h2>
+            <p class="section-paragraph pt-p">
+                As part of a challenge, I was tasked with designing a mobile application 
+                that would <span class="highlight">enable employees to reserve their seats</span>  prior to arriving at the office. 
+                The resulting design prototype that I created is showcased below.
+            </p>
+            <hr class="spacer">
+            <div class="grid-solution pt-p">
+                <div class="grid-sol-left pt-h2">
+                    <div class="img-wrapper">
+                        <img src="/images/Intern/fuse-sol-1.webp"
+                        alt="Img showing the selecting floor section in the app" 
+                        class="img-gif">
+                    </div>
+                </div>
+                <div class="grid-sol-right pt-h2">
+                    <h2 class="problem-title">
+                        Selecting a particular floor
+                    </h2>
+                    <ul class="margin-left pt-h2">
+                        <li class="li-points">
+                            Enabling employees across teams to select their desired floor.
+                        </li>
+                        <li class="li-points pt-h2">
+                            Displaying the real-time seat availability for a specific floor.
+                        </li>
+                        <li class="li-points pt-h2">
+                            Displaying the current availability of seats for the first and second half of the day with specific seat counts.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid-sol-right pt-h2">
+                    <h2 class="problem-title">
+                        Upcoming Bookings
+                    </h2>
+                    <ul class="margin-left pt-h2">
+                        <li class="li-points">
+                            Providing employees with updates on their upcoming bookings.
+                        </li>
+                        <li class="li-points pt-h2">
+                            Providing comprehensive information on upcoming bookings, including the selected shift and floor details.  
+                        </li>
+                        <li class="li-points pt-h2">
+                            Inclusion of a calendar feature to facilitate quick and convenient selection of booking dates.
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-sol-left pt-h2 js-center">
+                    <div class="img-wrapper">
+                        <img src="/images/Intern/fuse-sol-2.gif" 
+                        alt="Gif showing form checklist in the app." 
+                        class="img-gif">
+                    </div>
+                </div>
+
+                <div class="grid-sol-left pt-h2">
+                    <div class="img-wrapper">
+                        <img src="/images/Intern/fuse-sol-3.gif" 
+                        alt="Gif showing document checklist feature in the app" 
+                        class="img-gif">
+                    </div>
+                </div>
+                <div class="grid-sol-right pt-h2">
+                    <h2 class="problem-title">
+                        Recent Notices & Notifications
+                    </h2>
+                    <ul class="margin-left pt-h2">
+                        <li class="li-points">
+                            Displaying recent notices on the homepage to prevent employee oversight.
+                        </li>
+                        <li class="li-points pt-h2">
+                            Older notifications and notices are viewable on the notifications screen.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="spacer">
+            <hr class="spacer">
+            <p class="section-paragraph pt-h2">
+                I had a lot of fun during my internship working with other design interns and senior designers. 
+                Shoot me a message on Linkedin or Email me to learn my experience interning at Fusemachines.
+            </p>
+        </section>
+        <hr class="spacer">
+        <a href="/public/html/fixit.html" class="next-project fw-semi pt-h2">
+            <h2>
+                Next Project (Fixit)
+            </h2>
+        </a>
+        <footer class="footer container">
+            <hr>
+
+            <div class="footer-title">
+                <h3>
+                    Designed and Developed by
+                    <a href="#">
+                        <span>
+                            Manish Pandey. <span id="pawan-putra">&#128018;</span>
+                        </span>
+                    </a>
+                    &#169 <span id="disabled">2023</span> 
+                </h3>
+            </div>
+            <div class="footer-socials">
+                <div class="socials-link-footer">
+                    <a href="">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-mail-send-line"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-github-line"></i>
+                    </a>   
+                </div>
+            </div>
+       </footer>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js" integrity="sha512-VigP+/SyhNQ7m+09j8ue26TB1U76B/AnbaEkzT6R0Y+nOYR4GpwGZuL4ZfSPCuuVvpBNkVDOhy+R+38qtDEkWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="/public/vanilla-tilt.js"></script>
+    <script src="/public/script.js"></script>
+</body>

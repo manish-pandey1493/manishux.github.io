@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/visamate.css">
+    <title>VisaMate - Manish Pandey</title>
+</head>
+<body>
+    <div id="cursor-move-blur"></div>
+    <!-- <button id="lightmode-btn">
+        <div>
+            <i id="moon" class="ri-moon-clear-line"></i>
+            <i id="sun" class="ri-sun-line"></i>
+        </div>
+    </button> -->
+    <button id="btntotop">
+        <i class="ri-arrow-up-s-line"></i>
+    </button>
+    <aside>
+        <div class="aside-center">
+            <nav>
+                <div class="upper-nav">
+                    <div class="clock-center">
+                        <div id="navbarNav">
+                            <div class="clockanalog">
+                              <div class="hand hour" data-hour-hand></div>
+                              <div class="hand minute" data-minute-hand></div>
+                              <div class="hand second" data-second-hand></div>
+                              <div class="number number1">1</div>
+                              <div class="number number2">2</div>
+                              <div class="number number3">3</div>
+                              <div class="number number4">4</div>
+                              <div class="number number5">5</div>
+                              <div class="number number6">6</div>
+                              <div class="number number7">7</div>
+                              <div class="number number8">8</div>
+                              <div class="number number9">9</div>
+                              <div class="number number10">10</div>
+                              <div class="number number11">11</div>
+                              <div class="number number12">12</div>
+                            </div>
+                        </div>
+                        <div class="logo-name">
+                            <h3>manish pandey</h3>
+                        </div>
+                    </div>  
+                    <div class="nav-items">
+                        <svg class="svg_2" onclick="hideMenu()"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(229,229,229,1)"></path></svg>
+                        <ul>
+                            <!-- <li>
+                                <a class="active-tab" href="">
+                                    Home
+                                </a>
+                            </li> -->
+                            <li><a class="active-tab" href="/public/html/index.html">UX Projects</a></li>
+                            <li><a href="/public/html/webdesign.html">Templates</a></li>
+                            <li><a href="/public/html/resume.html">Resume</a></li>
+                            <li><a href="/public/html/about.html">About Me</a></li>
+                        </ul>
+                    </div>  
+                    <svg class="svg_1" onclick="openMenu()"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z" fill="rgba(236,234,234,1)"></path></svg>   
+                </div>
+                <div class="socials-link">
+                    <a href="">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-mail-send-line"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-github-line"></i>
+                    </a>   
+                </div>
+            </nav>
+        </div>  
+    </aside>
+
+    <main id="main-content">
+        <section id="ideation-sec" class="container">
+            <div class="banner">
+                <img src="/images/visamate/BannerVISA.webp" 
+                alt="Banner Image of the VisaMate App" loading="eager" 
+                class="img-full">
+            </div>
+            <div class="title-case pt-h2">
+                <div class="grid-1">
+                    <div class="grid-item-1">
+                        <h2 class="project-title">
+                            VisaMate
+                        </h2>
+                    </div>
+                    <div class="grid-item-2">
+                        <a href="#final-prototype">
+                            Scroll to Final Prototype
+                        </a>
+                    </div>
+                </div>
+                <h2 class="project-subtitle pt-h2">
+                    UX Design • User Research • Prototyping
+                </h2>
+                <p class="problem-title pt-h2 fw-semi">
+                    Providing a comprehensive, step-by-step approach to assist immigrants in navigating the visa journey process.
+                </p>
+                <div class="grid-2 pt-p">
+                    <div class="grid-left">
+                        <h2 class="project-subtitle pt-h2">
+                            Project Timeline
+                        </h2>
+                        <ul class="margin-left pt-p">
+                            <li class="li-points">January 2022</li>
+                            <li class="li-points pt-p">8 Weeks</li>
+                        </ul>
+                    </div>
+                    <div class="grid-center">
+                        <h2 class="project-subtitle pt-h2">
+                            My Role
+                        </h2>
+                        <ul class="margin-left pt-p">
+                            <li class="li-points">Solo UX Designer</li>
+                            <li class="li-points pt-p">User Research</li>
+                        </ul>
+                    </div>
+                    <div class="grid-right">
+                        <h2 class="project-subtitle pt-h2">
+                            Tools Used
+                        </h2>
+                        <ul class="margin-left pt-p nested-grid">
+                            <li class="li-points">Figma</li>
+                            <li class="li-points">Google Forms</li>
+                            <li class="li-points pt-p">Figjam</li>
+                            <li class="li-points pt-p">Protopie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <div class="problem">
+                <h2 class="section-heading pt-h2">
+                    Problem
+                </h2>
+                <p class="problem-title pt-p">
+                    Immigrants struggle with the U.S visa application process.
+                </p>
+                <p class="section-paragraph pt-p">
+                    John, a fiancé of a U.S citizen <span class="highlight">who is applying for a K-1 visa,</span>  expresses
+                    frustration with the visa processing journey <span class="highlight">due to the lack of a platform</span>  
+                    where he can access filled form samples and his upcoming steps.
+                </p>
+                <div class="img-wrapper pt-h2">
+                    <figure>
+                        <img src="/images/visamate/Problem-ss.webp"
+                        alt="Figure showing the users asking queries about visa processing on different social media groups." 
+                        class="img-full" id="up-down">
+                        <figcaption class="img-caption pt-p">
+                            Img: Applicants posting questions about the visa application process in Facebook group.
+                        </figcaption>
+                    </figure>
+                 
+                </div>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <div class="how pt-h2">
+                <h2 class="pt-h2 how-large-title">
+                    How might we make the visa processing journey less frustrating?
+                </h2>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <div class="solution">
+                <h2 class="section-heading pt-h2">
+                    Sneak Peek Into Solution
+                </h2>
+                <div class="grid-solution pt-p">
+                    <div class="grid-sol-left pt-h2">
+                        <div class="img-wrapper">
+                            <img src="/images/visamate/Stepbystep.gif"
+                            alt="Gif showing the step-by-step process of immigrant visa journey" 
+                            class="img-gif">
+                        </div>
+                    </div>
+                    <div class="grid-sol-right pt-h2">
+                        <h2 class="problem-title">
+                            Step-By-Step Guidance
+                        </h2>
+                        <ul class="margin-left pt-h2">
+                            <li class="li-points">
+                                Sequential approach to assisting immigrants in determining their next steps.
+                            </li>
+                            <li class="li-points pt-h2">
+                                Detailed explanation of each step in the process with respective form samples.
+                            </li>
+                            <li class="li-points pt-h2">
+                                Concise and explicit guidance on verifying the necessary documents at each specific step.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-sol-right pt-h2">
+                        <h2 class="problem-title">
+                            Form Samples
+                        </h2>
+                        <ul class="margin-left pt-h2">
+                            <li class="li-points">
+                                A search function to access relevant form samples for every required document.
+                            </li>
+                            <li class="li-points pt-h2">
+                                Instructions provided in sections for users to fill out forms accurately. 
+                            </li>
+                            <li class="li-points pt-h2">
+                                A comprehensive checklist to facilitate a smooth and error-free form completion process.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-sol-left pt-h2 js-center">
+                        <div class="img-wrapper">
+                            <img src="/images/visamate/Form checklist.gif" 
+                            alt="Gif showing form checklist in the app." 
+                            class="img-gif">
+                        </div>
+                    </div>
+
+                    <div class="grid-sol-left pt-h2">
+                        <div class="img-wrapper">
+                            <img src="/images/visamate/Documentschecklist.gif" 
+                            alt="Gif showing document checklist feature in the app" 
+                            class="img-gif">
+                        </div>
+                    </div>
+                    <div class="grid-sol-right pt-h2">
+                        <h2 class="problem-title">
+                            Documents Checklist
+                        </h2>
+                        <ul class="margin-left pt-h2">
+                            <li class="li-points">
+                                Checklists for each document to ensure users have all the required documents when submitting their application.
+                            </li>
+                            <li class="li-points pt-h2">
+                                A convenient checkbox feature that serves as a reminder, eliminating the need for users to manually note down each required document.
+                            </li>
+                            <li class="li-points pt-h2">
+                                Required documents for both the sponsor and the applicant are segregated for easy organization and retrieval.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-sol-right pt-h2">
+                        <h2 class="problem-title">
+                            Translation and Services
+                        </h2>
+                        <ul class="margin-left pt-h2">
+                            <li class="li-points">
+                                In-app translation services to enable users to access all the services within the application.
+                            </li>
+                            <li class="li-points pt-h2">
+                                Displaying lawyers or professionals who are located in the user's chosen area.
+                            </li>
+                            <li class="li-points pt-h2">
+                                Booking a lawyer through the app for translation and document verification services.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-sol-left pt-h2 js-center">
+                        <!-- put complex flow of booking lawyers gif here -->
+                        <div class="img-wrapper">
+                            <img src="/images/visamate/Services.gif" 
+                            alt="Gif showing services present in the app" 
+                            class="img-gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Let's dive into how I did it - Approach
+            </h2>
+            <div class="pt-h2">
+                <figure class="pt-h2">
+                    <img src="/images/visamate/design-process.webp" alt="" class="img-full">
+                </figure>
+                <figcaption class="img-caption pt-p">
+                    Img: Design Approach
+                </figcaption>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Market Research
+            </h2>
+            <p class="section-paragraph pt-p">
+                According to the U.S. Department of State, in fiscal year 2021 
+                (which runs from October 2020 to September 2021), there were approximately 
+                <span class="highlight">462,000 immigrant visa applications</span>  submitted worldwide. This includes applications 
+                submitted by family members of U.S. citizens and permanent residents, as well as 
+                those submitted by individuals seeking employment-based visas, diversity visas, and 
+                other categories.
+            </p>
+            <div class="img-wrapper pt-h2">
+                <figure class="pt-p">
+                    <img src="/images/visamate/Market Research.svg" 
+                    alt="Image showing the recent trends of immigration status and number of immigrants." 
+                    class="img-full">
+                </figure>
+                <figcaption class="pt-p img-caption">
+                    Img: Immigrants status in recent years
+                </figcaption>
+            </div>
+            <p class="problem-title pt-h2">
+                So what about this numbers?....Hmmm, How about finding business opportunities and solving 
+                user problem at the same time?
+            </p>
+            <h2 class="section-heading pt-h2">
+                What are the possibilities?
+            </h2>
+            <p class="section-paragraph pt-p">
+                This all the numbers of immigrants are using one or other ways to help themselves
+                in their visa journey. How about we analyze the similar product that is trying to solve 
+                the user problem. I feel glad that I got to connect with so many immigrants who were 
+                in their visa journey process and got to know <span class="highlight">the app named "Lawfully"</span>  which was somewhat 
+                trying to solve the same problem. "Really appreciate their effort".
+            </p>
+            <div class="img-wrapper pt-h2">
+                <figure class="pt-p">
+                    <img src="/images/visamate/Lawfully.webp" 
+                    alt=""
+                    class="img-full">
+                </figure>
+                <figcaption class="img-caption pt-p">
+                    Img: Lawfully App 
+                </figcaption>
+            </div>
+            <p class="problem-title pt-h2">
+                Some of the features that were not available on the app but might be crucial in the 
+                visa journey process :
+            </p>
+            <ol class="margin-left pt-h2">
+                <li class="li-points pt-p">Step-By-Step guidance [What's next step?]</li>
+                <li class="li-points pt-h2">Documents checklist [What document to submit on each step?]</li>
+                <li class="li-points pt-h2">Sample forms for reference</li>
+                <li class="li-points pt-h2">Translation and notary services around user </li>
+            </ol>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Who are our potential users?
+            </h2>
+            <p class="section-paragraph pt-p">
+                Conducting a thorough market research and analyzing the demographics of immigrants 
+                who actively participate in social media groups have enabled me to identify the 
+                target audience beforehand, which I believe would greatly benefit the design process.
+            </p>
+            <div class="img-wrapper pt-h2">
+                <figure class="pt-p">
+                    <img src="/images/visamate/User-posting.webp" loading="lazy"
+                    alt="Image showing the immigrants posting questions about the visa processing."
+                    class="img-full">
+                </figure>
+                <figcaption class="img-caption pt-p">
+                    Img: Immigrants posting questions about the visa processing
+                </figcaption>
+            </div>
+            <div class="img-wrapper pt-h2">
+                <figure class="pt-p">
+                    <img src="/images/visamate/Targeted Users.svg" loading="lazy"
+                    alt="Image showing the potential user of our product"
+                    class="img-full">
+                </figure>
+                <figcaption class="img-caption pt-p">
+                    Img: Potential users of the product.
+                </figcaption>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Conducting User Research
+            </h2>
+            <p class="section-paragraph pt-p">
+                During the project, I started with the qualitative user research for getting insights 
+                from the potential users. The qualitative user research method I used during the 
+                empathize phase was User interview.
+            </p>
+            <div class="grid-table pt-h2">
+                <div class="grid-table-left">
+                    <h2 class="problem-title">
+                        Research Methods
+                    </h2>
+                    <ul class="margin-left pt-p">
+                        <li class="li-points pt-p">User Interviews</li>
+                        <li class="li-points pt-p">Thematic Analysis</li>
+                        <li class="li-points pt-p">Discourse Analysis</li>
+                    </ul>
+                </div>
+                <div class="grid-table-center">
+                    <h2 class="problem-title">
+                        Rationale
+                    </h2>
+                    <ul class="margin-left pt-p">
+                        <li class="li-points pt-p">
+                            I had the opportunity to connect with many individuals who were 
+                            waiting for their visas, and conducting actual interviews with 
+                            them would be meaningful and valuable.
+                        </li>
+                        <li class="li-points pt-h2">
+                            Thematic analysis would give me an opportunity to analyze the 
+                            data that I collect from the user interviews and understand the 
+                            recurring themes or patterns.
+                        </li>
+                        <li class="li-points pt-h2">
+                            Through the utilization of Discourse analysis, I gained a deeper 
+                            comprehension of the users' language tone and communication patterns 
+                            during interviews, especially in relation to the specific problem I 
+                            sought to solve.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="spacer">
+            <h2 class="problem-title pt-h2">
+                The actual process :
+            </h2>
+            <ol class="margin-left pt-h2">
+                <li class="li-points fw-semi">Setting Goal</li>
+                <p class="section-paragraph pt-p">
+                    I initiated the research with the <span class="highlight">aim of identifying the pain points</span>  
+                    experienced by users during their immigration visa processing. In 
+                    addition to this, I was <span class="highlight">looking for the platform </span>that had the highest 
+                    level of user activity and preference. To prioritize the investigation 
+                    of the most severe issues, I ranked the questions according to their level 
+                    of severity.
+                </p>
+                <hr class="spacer">
+                <li class="li-points fw-semi pt-h2">Recruiting relevant participants</li>
+                <p class="section-paragraph pt-p">
+                    Recruiting relevant participants is more important as it can provide more relevant 
+                    insights from the actual potential users that would use the product. 
+                    Trying to get participants for the interview was like trying to convince a 
+                    cat to take a bath - a real challenge!. A group of 6 participants were 
+                    selected for the interview.
+                </p>
+                <!-- INTERVIEW SESSION IMAGES SHOULD BE PLACED HERE AFTER COMPRESSION -->
+                <div class="grid-interviews pt-h2">
+                    <div class="grid-users">
+                        <div class="img-wrapper pt-h2">
+                            <figure>
+                                <img src="/images/visamate/User-1.webp" 
+                                alt="Image of interview session with user"
+                                class="img-full">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="grid-users">
+                        <div class="img-wrapper pt-h2">
+                            <figure>
+                                <img src="/images/visamate/User-1.webp" 
+                                alt="Image of interview session with user"
+                                class="img-full">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="grid-users">
+                        <div class="img-wrapper pt-h2">
+                            <figure>
+                                <img src="/images/visamate/User-1.webp" 
+                                alt="Image of interview session with user"
+                                class="img-full">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="grid-users">
+                        <div class="img-wrapper pt-h2">
+                            <figure>
+                                <img src="/images/visamate/User-1.webp" 
+                                alt="Image of interview session with user"
+                                class="img-full">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="grid-users">
+                        <div class="img-wrapper pt-h2">
+                            <figure>
+                                <img src="/images/visamate/User-1.webp" 
+                                alt="Image of interview session with user"
+                                class="img-full">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="grid-users">
+                        <div class="img-wrapper pt-h2">
+                            <figure>
+                                <img src="/images/visamate/User-1.webp" 
+                                alt="Image of interview session with user"
+                                class="img-full">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <hr class="spacer">
+                <h2 class="problem-title pt-h2">
+                    "<span class="highlight">Key Takeaways:</span> Always appreciate the time and effort that users invest in 
+                    interviews. Additionally, strive to ensure participants don't leave empty-handed. 
+                    For instance, after my interviews, I provided refreshments and snacks, which was 
+                    well-received and appreciated."
+                </h2>
+                <hr class="spacer">
+                <li class="li-points fw-semi pt-h2">Conducting Interviews</li>
+                <p class="section-paragraph pt-p">
+                    During the interviews, I observed user behaviours and recorded the conversation 
+                    with their consent to find out more insights later during the decision-making. 
+                    Some of the questions that were asked during the interviews were:
+                </p>
+                <table>
+                    <tr>
+                        <th class="problem-title">Questions</th>
+                        <th class="problem-title">Rationale</th>
+                    </tr>
+                    <tr>
+                        <td class="section-paragraph  pt-h2" data-cell="Question-1">
+                            1. How do you check your visa case status?
+                        </td>
+                        <td class="section-paragraph pt-h2" data-cell="Answer-1">
+                            To understand the primary platform utilized by the users.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="section-paragraph pt-p" data-cell="Question-2">
+                            2. Are you waiting for your immigration visa? If yes, how long has
+                            it been that you applied for the visa?
+                        </td>
+                        <td class="section-paragraph pt-p" data-cell="Answer-2">
+                            To empathize the challenges that users are presently encountering
+                            due to longer waiting periods.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="section-paragraph pt-p" data-cell="Question-3">
+                            3. Are there any existing apps or tools that you currently use to
+                            track your visa status?
+                        </td>
+                        <td class="section-paragraph pt-p" data-cell="Answer-3">
+                            To gain a better understanding of the features offered by similar
+                            app or identify areas where it may be lacking
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="section-paragraph pt-p" data-cell="Question-4">
+                            4. What additional features would you like to see in an app that
+                            helps track immigration journey?
+                        </td>
+                        <td class="section-paragraph pt-p" data-cell="Answer-4">
+                            To find out if users require specific features that could assist
+                            them in their visa application process.
+                        </td>
+                    </tr>
+                </table>
+                <hr class="spacer">
+                <li class="li-points fw-semi pt-h2">
+                    Analyzing Insights 
+                </li>
+                <p class="section-paragraph pt-p">
+                    After conducting interviews, I came up with a lot of insights in the form of 
+                    different narration and user behavior. I used these method to analyze the findings 
+                    and some of them are listed below:
+                </p>
+                <ul class="margin-left pt-h2">
+                    <li class="li-points section-paragraph">
+                        Thematic Analysis
+                    </li>
+                    <p class="section-paragraph pt-p">
+                        During the analysis, every feature discussion and user sayings were 
+                        divided into “Positive experience” and “Negative experience” to analyze 
+                        each insights. I identified and <span class="highlight">isolated the recurring frustrations</span> expressed 
+                        by the users, segregating them from other insights.
+                    </p>
+                    <div class="grid-solution pt-h2">
+                        <div class="grid-thematic">
+                            <div class="img-wrapper">
+                                <figure class="pt-p">
+                                    <img src="/images/visamate/Thematic.webp" 
+                                    alt=""
+                                    class="img-full">
+                                </figure>
+                                <figcaption class="img-caption pt-p">
+                                    Img: Analyzing insights received from the interviews.
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div class="grid-thematic-right">
+                            <div class="img-wrapper">
+                                <figure class="pt-p">
+                                    <img src="/images/visamate/thematic-2.webp" 
+                                    alt=""
+                                    class="img-full">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="spacer">
+                    <li class="li-points section-paragraph pt-h2">
+                        Discourse Analysis
+                    </li>
+                    <p class="section-paragraph pt-p">
+                        Every sentence from the participants were analyzed including the tone, style 
+                        and underlying attitudes and beliefs. I analyzed the tone of the participants' 
+                        frustration regarding various pain points and explored their backgrounds.
+                    </p>
+                    <hr class="spacer">
+                    <div class="img-wrapper pt-p">
+                        <video autoplay muted loop preload="auto" loading="lazy"  
+                        src="/images/visamate/video-me.mp4" alt="" class="img-full"></video>
+                    </div>                    
+                </ul>
+                <hr class="spacer">
+                <li class="li-points section-paragraph fw-semi pt-h2">
+                    Creating Persona
+                </li>
+                <p class="section-paragraph pt-p">
+                    After the collection of insights from the interview, I created user personas 
+                    that could represent the target audience and provide a clear understanding of 
+                    their goals, motiavations and behaviors. 
+                </p>
+                <div class="grid-persona pt-h2">
+                    <div class="grid-left-persona">
+                        <div class="img-wrapper pt-h2">
+                            <figure>
+                                <img src="/images/visamate/John-persona.webp" loading="lazy"
+                                alt="User persona"
+                                class="img-full">
+                            </figure>
+                            <figcaption class="img-caption pt-p">
+                                Img: User Persona
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="grid-right-persona">
+                        <div class="img-wrapper pt-h2">
+                            <figure>
+                                <img src="/images/visamate/empathy-map.webp" loading="lazy"
+                                alt="Empathy Map"
+                                class="img-full">
+                            </figure>
+                            <figcaption class="img-caption pt-p">
+                                Img: Empathy Map
+                            </figcaption>
+                    </div>    
+                    </div>
+                </div>
+                <hr class="spacer">
+                <li class="li-points pt-h2 fw-semi">
+                    Findings
+                </li>
+                <p class="section-paragraph pt-p">
+                    From the above analysis, I came to find that <span class="highlight">80% of the users </span>were
+                    using the mobile devices to track their case.Also, some recurring frustrations from 
+                    the users that were actually using the similar products was found and they were:
+                </p>
+                <hr class="spacer">
+                <div class="grid-findings pt-h2">
+                    <div class="grid-finding-left">
+                        <p class="section-paragraph fw-semi">
+                            Indication of Step-By-Step process
+                        </p>
+                        <p class="section-paragraph pt-p">
+                            Applicants had issues finding out the next step in their visa processing
+                            journey.
+                        </p>
+                    </div>
+                    <div class="grid-finding-center">
+                        <p class="section-paragraph fw-semi">
+                            Form Samples and Instructions
+                        </p>
+                        <p class="section-paragraph pt-p">
+                            Applicants had hard time figuring out some of the information that needed
+                            to be filled out in their forms related to immigration.
+                        </p>
+                    </div>
+                    <div class="grid-finding-right">
+                        <p class="section-paragraph fw-semi">
+                            Real-time Case Tracking
+                        </p>
+                        <p class="section-paragraph pt-p">
+                            They had to open their app in order to find out the updates about 
+                            the case everytime they wanted to know their case status.
+                        </p>
+                    </div>  
+                </div>  
+            </ol>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Design decisions based on the research
+            </h2>
+            <p class="section-paragraph pt-p">
+                After the research, I used the insights to make the following design-decisions.
+            </p>
+            <hr class="spacer">
+            <div class="grid-decisions pt-h2 ">
+                <div class="grid-decision-1">
+                    <p class="problem-title">
+                        Focusing on mobile platform
+                    </p>
+                    <p class="section-paragraph pt-p">
+                        After analyzing the research findings, it became evident that the optimal 
+                        platform for our solution is a mobile device, which led to the decision 
+                        to develop a dedicated mobile app.
+                    </p>
+                </div>
+                <div class="grid-decision-2">
+                    <p class="problem-title">
+                        Indication of Step by Step Process
+                    </p>
+                    <p class="section-paragraph pt-p">
+                        Applicants should be aware of the steps that are going to 
+                        occur during their visa application process.
+                    </p>
+                </div>
+                <div class="grid-decision-3">
+                    <p class="problem-title">
+                        Filing Form Instruction or Samples
+                    </p>
+                    <p class="section-paragraph pt-p">
+                        Providing a form sample with all fields completed and a set of instructions to 
+                        aid applicants in understanding the purpose of each section.
+                    </p>
+                </div>
+                <div class="grid-decision-4">
+                    <p class="problem-title">  
+                        Clean UI (Uncluttered UI)
+                    </p>
+                    <p class="section-paragraph pt-p">
+                        Ensuring that the user experience is accessible and user-friendly for all 
+                        applicants, a clean and functional user interface can be implemented, 
+                        regardless of their level of familiarity with the system.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="design-sec" class="container">
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Crafting Design Ideas
+            </h2>
+            <p class="section-paragraph pt-p">
+                Based on the findings of the research, I have developed a list of design ideas and 
+                features. These insights encompassed a range of design considerations, including 
+                developing a <span class="highlight">streamlined user interface,</span>  implementing a 
+                <span class="highlight">step-by-step visa application </span> 
+                process, enabling users to <span class="highlight">track their case status,</span> providing 
+                access to a list of required documents, and offering assistance with
+                <span class="highlight">notary and 
+                translation services</span> through access to a network of lawyers.
+            </p>
+            <hr class="spacer">
+            <div class="grid-decisions pt-h2 ">
+                <div class="grid-decision-1">
+                    <p class="problem-title">
+                        Feature-1
+                    </p>
+                    <p class="section-paragraph pt-p fw-semi">
+                        User friendly interface :
+                    </p>
+                    <p class="section-paragraph pt-p">
+                      The app should be designed with a user-friendly interface that is easy to 
+                      navigate, with clear instructions and guidance throughout the visa application
+                      process.
+                    </p>
+                </div>
+                <div class="grid-decision-2">
+                    <p class="problem-title">
+                        Feature-2
+                    </p>
+                    <p class="section-paragraph pt-p fw-semi">
+                        Clear step-by-step guidance :
+                    </p>
+                    <p class="section-paragraph pt-p">
+                        The app should be able to provide step-by-step guidance while filing out the visa
+                        application, including detailed instructions on how to complete each section of the 
+                        application form.
+                    </p>
+                </div>
+                <div class="grid-decision-3">
+                    <p class="problem-title">
+                        Feature-3
+                    </p>
+                    <p class="section-paragraph pt-p fw-semi">
+                        Documents checklist :
+                    </p>
+                    <p class="section-paragraph pt-p">
+                        The app should include a checklist of required documents in every step of the 
+                        visa application process. In addition to this, instructions on how to obtain each
+                        of them should also be included.
+                    </p>
+                </div>
+                <div class="grid-decision-4">
+                    <p class="problem-title">  
+                        Feature-4
+                    </p>
+                    <p class="section-paragraph pt-p fw-semi">
+                        Translation service with verified lawyer :
+                    </p>
+                    <p class="section-paragraph pt-p">
+                        The app should include a translation service in collaboration with 
+                        verified lawyer from specific region that helps user to translate their
+                        documents into English or the language required for the visa application.
+                    </p>
+                </div>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Designing Low-Fidelity Wireframes
+            </h2>
+            <p class="section-paragraph pt-p">
+                Once I have brainstormed and generated multiple ideas, I analyze design ideas and try to 
+                create a low-fi version wireframe to get the general app flow.
+            </p>
+            <hr class="spacer">
+            <div class="grid-wireframe">
+                <div class="grid-wireframe-left">
+                    <div class="img-wrapper">
+                        <figure>
+                            <img src="/images/visamate/Low-Fidelity-1.webp" 
+                            alt=""
+                            class="img-full">
+                        </figure>
+                    </div>
+                </div>
+                <div class="grid-wireframe-center">
+                    <div class="img-wrapper">
+                        <figure>
+                            <img src="/images/visamate/Low-Fidelity-2.webp" 
+                            alt=""
+                            class="img-full">
+                        </figure>
+                    </div>
+                </div>
+                <div class="grid-wireframe-right">
+                    <div class="img-wrapper">
+                        <figure>
+                            <img src="/images/visamate/Low-Fidelity-3.webp" 
+                            alt=""
+                            class="img-full">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Creating App Flow
+            </h2>
+            <p class="section-paragraph pt-p">
+                From low-fi wireframe sketching, I got to know what the general app flow should
+                look like and started working on making it as human centered as possible.
+            </p>
+            <hr class="spacer">
+            <div class="img-wrapper">
+                <figure>
+                    <img src="/images/visamate/App Flow-VisaMate.webp" loading="lazy"
+                    alt=""
+                    class="img-full">
+                </figure>
+                <figcaption class="img-caption pt-p">
+                    Img: App flow for the VisaMate app.
+                </figcaption>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <!-- ANIM SCROLL SAP -->
+            <div class="how-crucial pt-h2">
+                <div id="anim-ltr">
+                    <h2  class="pt-h2 how-large-title">
+                        How might we make the onboarding as seamless as possible?
+                    </h2>
+                </div>
+               
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Onboarding Ideas
+            </h2>
+            <p class="section-paragraph pt-p">
+                As creating a case when onboarding to the app is the most crucial part and as a 
+                designer I tried to create the process as seamless as possible. During which I came
+                up with two ways for creating a case when onboarding users.
+            </p>
+            <hr class="spacer">
+            <div class="img-wrapper">
+                <figure>
+                    <img src="/images/visamate/variant-test.webp" loading="lazy"
+                    alt=""
+                    class="img-full">
+                </figure>
+                <figcaption class="img-caption pt-p">
+                    Img: Two variants of screen for creating case.
+                </figcaption>
+            </div>
+            <hr class="spacer">
+            <p class="section-paragraph pt-p">
+                Now it was time to find the optimal solution that is backed up by some actual
+                user testing. Thus, I conducted <span class="highlight">A/B testing</span>  
+                between these two variants of screen. I also <span class="highlight">hypothesized that the inclusion 
+                    of radio-button and dropdown list (Variant-1)</span>  for the immigrant and non-immigrant visa category 
+                would be easier for user to select.
+            </p>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Conducting A/B Testing
+            </h2>
+            <p class="section-paragraph pt-p">
+                During the user testing, my primary focus was on the
+                 <span class="highlight">task completion rate and time spent 
+                    on page metrics</span> for participants. I prioritized these metrics as they provide valuable 
+                insights into the effectiveness of the design. Specifically, a longer time spent by a 
+                participant in completing the task indicates that the design may be less effective. 
+                Participants were also requested to Think-out-loud during the testing as it could allow 
+                a lot of insights about what they are thinking at a particular task.
+            </p>
+            <hr class="spacer">
+            <div class="img-wrapper">
+                <video class="img-full" 
+                src="/images/visamate/testig-video.mp4" autoplay muted loop></video>
+            </div>
+            <div class="grid-testing pt-h2">
+                <div class="grid-testing-left">
+                    <figure>
+                        <img src="/images/visamate/participant-1.webp" 
+                        alt=""
+                        class="img-full">
+                    </figure>
+                </div>
+                <div class="grid-testing-right">
+                    <figure>
+                        <img src="/images/visamate/participant-2.webp" 
+                        alt=""
+                        class="img-full">
+                    </figure>
+                </div>
+            </div>
+            <div class="img-wrapper pt-h2">
+                <figure>
+                    <img src="/images/visamate/participant-3.webp" loading="lazy"
+                    alt=""
+                    class="img-full">
+                </figure>
+            </div>
+            <hr class="spacer">
+            <h2 class="section-heading pt-h2">
+                Analyzing Insights
+            </h2>
+            <p class="section-paragraph pt-p">
+                The data collected during the interviews was organized in a chart format to facilitate 
+                the comparison of the effectiveness of Variant 1 versus Variant 2.
+            </p>
+            <div class="grid-testing pt-h2">
+                <div class="grid-testing-left">
+                    <figure>
+                        <img src="/images/visamate/Screen-A.webp" loading="lazy" 
+                        alt="Bar chart showing insights after A/B testing of variant-1"
+                        class="img-full">
+                    </figure>
+                    <figcaption class="img-caption pt-p">
+                        Img: Insights from A/B testing for variant-1.
+                    </figcaption>
+                </div>
+                <div class="grid-testing-right">
+                    <figure>
+                        <img src="/images/visamate/Screen-B.webp" loading="lazy"
+                        alt="Bar chart showing insights after A/B testing of variant-2"
+                        class="img-full">
+                    </figure>
+                    <figcaption class="img-caption pt-p">
+                        Img: Insights from A/B testing for variant-2.
+                    </figcaption>
+                </div>
+            </div>
+            <hr class="spacer">
+            <p class="problem-title">
+                So you might be thinking why I would consider time-taken by a participant as 
+                decision making factor?.... The answer is, it is the time-taken by a participant to 
+                succesfully select their own visa category.
+            </p>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Implementing the winning variant
+            </h2>
+            <p class="section-paragraph pt-p">
+                Some of my initial assumption ended up getting dumped faster than a bad Tinder match.
+            </p>
+            <hr class="spacer">
+            <div class="img-wrapper pt-h2">
+                <figure id="center-it">
+                    <img src="/images/visamate/Winning-variant.gif" loading="lazy"
+                    alt="Winning variant of the screen"
+                    class="img-gif">
+                </figure>
+                <figcaption id="center-it" class="img-caption pt-h2">
+                    Img: App screen for selecting visa category while onboarding.
+                </figcaption>
+            </div>
+        </section>
+        <section id="prototype-sec" class="container">
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Creating an Initial Prototype
+            </h2>
+            <p class="section-paragraph pt-p">
+                Prior to advancing to the final prototype, an initial prototype was 
+                developed in order to validate the design concepts through the utilization 
+                of usability testing.
+            </p>
+            <hr class="spacer">
+            <div class="img-wrapper">
+                <iframe class="img-full" width="560" height="560" 
+                src="https://www.youtube.com/embed/d5_3G_EkZ9g" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Conducting Usability Testing 
+            </h2>
+            <p class="section-paragraph pt-p">
+                During the usability testing, participants were requested to complete a series of 
+                tasks, and the following metrics were employed to assess their performance: <span class="highlight">
+                Task 
+                completion time, Success Rate, Error Rate, and User Engagement.
+                </span> 
+            </p>
+            <p class="problem-title pt-h2">
+                How about the prompt tasks that were given and the rationale behind them?
+            </p>
+            <table>
+                <tr>
+                    <th class="problem-title">Prompt Task</th>
+                    <th class="problem-title">Rationale</th>
+                </tr>
+                <tr>
+                    <td class="li-points">
+                        Can you please walk me through the process of
+                        onboarding and signing up for the app?
+                    </td>
+                    <td class="li-points">
+                        To evaluate whether all users are capable of
+                        successfully completing the onboarding process.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="li-points">
+                        Please select the particular visa category that is
+                        associated to your case to enable tracking.
+                    </td>
+                    <td class="li-points">
+                        To understand if the user is able to choose the visa
+                        category and enter their receipt number easily.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="li-points">
+                        Please book a lawyer for translating your documents.
+                    </td>
+                    <td class="li-points">
+                        To check if users find the booking feature easy to use.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="li-points">
+                        Please check the upcoming steps in the visa application
+                        process.
+                    </td>
+                    <td class="li-points">
+                        To understand if the feature is usable by every age group
+                        of visa applicants.
+                    </td>
+                </tr>
+            </table>
+            <hr class="spacer">
+            <p class="section-paragraph fw-semi">
+                Insights 
+            </p>
+            <p class="section-paragraph pt-p">
+                Following the usability testing, numerous insightful findings were uncovered and among 
+                which the critical ones were selected and I started iterating them.
+            </p>
+            <hr class="spacer">
+            <p class="problem-title">
+                "Despite wearing my glasses, I am unable to view the lawyer's
+                profile description and the button to access it, as they appear 
+                excessively small to me."
+            </p>
+            <p class="section-paragraph pt-p">
+                - IR5 Applicant (Parents of U.S citizen)
+            </p>
+            <hr class="spacer">
+            <p class="problem-title">
+                "When exploring the community tab, I repeatedly clicked on the 'plus' 
+                button , only to become frustrated upon realizing that the button remained 
+                visible and did not disappear."
+            </p>
+            <p class="section-paragraph pt-p">
+                - CR1 Applicant (Spouse of U.S citizen)
+            </p>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                How did I iterate?
+            </h2>
+            <p class="section-paragraph pt-p fw-semi">
+                Solving 1st issue - 
+            </p>
+            <p class="section-paragraph pt-p">
+                Upon receiving the insights from the usability testing, it was observed that 
+                the <span class="highlight">Error rate for selecting the lawyer's profile</span>  was high, possibly due to the 
+                relatively small size of the button's touch area.  Additionally, it was noted that the 
+                text appeared somewhat challenging to read, potentially due to the greyish text color. 
+                Based on this feedback, an iterative process was carried out to address this issue.
+            </p>
+            <hr class="spacer">
+            <div class="img-wrapper">
+                <figure>
+                    <img src="/images/visamate/Translation.webp" loading="lazy" 
+                    alt="Iteration 1 showing before and after of translation and services screen"
+                    class="img-full">
+                </figure>
+                <figcaption class="img-caption pt-p">
+                    Img: Iteration-1 showing before and after of translation and services screen.
+                </figcaption>
+            </div>
+            <hr class="spacer">
+            <div class="img-wrapper">
+                <figure>
+                    <img src="/images/visamate/Iterating Process.webp" loading="lazy"
+                    alt="Iteration 1 showing before and after of translation and services screen"
+                    class="img-full">
+                </figure>
+                <figcaption class="img-caption pt-p">
+                    Img: Iteration-1 showing different version of design ideas.
+                </figcaption>
+            </div>
+            <hr class="spacer">
+            <p class="section-paragraph fw-semi">
+                Solving 2nd issue -
+            </p>
+            <p class="section-paragraph pt-p">
+                The placement of the "Creating Post" feature as a float button resulted in some 
+                confusion among users, particularly those <span class="highlight">aged between 40-55 years.</span> As a solution, 
+                a more distinct "Create Post" button was introduced at the top of the screen to improve 
+                clarity and ease-of-use.
+            </p>
+            <hr class="spacer">
+            <div class="img-wrapper">
+                <figure>
+                    <img src="/images/visamate/Before-After-community.webp" loading="lazy"
+                    alt="Iteration 2 showing before and after of community screen"
+                    class="img-full">
+                </figure>
+                <figcaption class="img-caption pt-p">
+                    Img: Iteration-2 showing before and after of translation and services screen.
+                </figcaption>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Final Prototype
+            </h2>
+            <p class="section-paragraph pt-p">
+                Following the design iteration, a final prototype was developed to closely 
+                resemble the product.
+            </p>
+            <hr class="spacer">
+            <div class="img-wrapper" id="final-prototype">
+                <iframe class="img-full" width="560" height="560" 
+                src="https://www.youtube.com/embed/pAyQhks3bpI" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                web-share" allowfullscreen></iframe>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Final Usability Testing and Success Metrics
+            </h2>
+            <p class="section-paragraph pt-p">
+                Following the design iteration and creation of the final prototype, 
+                a usability testing was conducted to validate the design changes
+            </p>
+            <hr class="spacer">
+            <div class="grid-final-testing">
+                <div class="grid-final-left">
+                    <div class="img-wrapper">
+                        <figure>
+                            <img src="/images/visamate/participant-2.webp" 
+                            alt=""
+                            class="img-full">
+                        </figure>
+                    </div>
+                </div>
+                <div class="grid-final-left">
+                    <div class="img-wrapper">
+                        <figure>
+                            <img src="/images/visamate/participant-2.webp" loading="lazy"
+                            alt=""
+                            class="img-full">
+                        </figure>
+                    </div>
+                </div>
+                <div class="grid-final-left">
+                    <div class="img-wrapper">
+                        <figure>
+                            <img src="/images/visamate/participant-2.webp" loading="lazy"
+                            alt=""
+                            class="img-full">
+                        </figure>
+                    </div>
+                </div>
+                <div class="grid-final-left">
+                    <div class="img-wrapper">
+                        <figure>
+                            <img src="/images/visamate/participant-2.webp" loading="lazy"
+                            alt=""
+                            class="img-full">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <hr class="spacer">
+            <p class="problem-title">
+                The results showed that 90% of the users successfully completed the given prompt tasks, 
+                indicating a positive outcome.
+            </p>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                What did I learn from this project?
+            </h2>
+            <ol class="pt-h2">
+                <li class="li-points margin-left">
+                    Throughout the project, I gained extensive knowledge about conducting 
+                   <span class="highlight">user research and testing,</span> gathering user feedback, and engaging in 
+                    conversations with individuals.
+                </li>
+                <li class="li-points margin-left pt-h2">
+                    An additional lesson I learned was the critical role that user feedback plays in the 
+                    UX design process. It provides valuable insights that 
+                    <span class="highlight">challenge our assumptions </span> and 
+                    enhance our understanding of user needs.
+                </li>
+                <li class="li-points margin-left pt-h2">
+                    Design is a process that involves multiple iterations, I recognize that the 
+                    current outcome is not the final one. I am eager to collaborate with diverse 
+                    designers and developers to obtain feedback on my designs and further iterate them.
+                </li>
+                <li class="li-points margin-left pt-h2">
+                    Although this was my passion project, my excitement lies in the potential to 
+                   <span class="highlight">scale it up by developing the app</span>  and assist a significant number of immigrants 
+                    who have faced similar challenges.
+                </li>
+            </ol>
+            <hr class="spacer">
+            <p class="project-subtitle fw-semi pt-h2">
+                "Design is a journey, not a destination. It's a never-ending process of discovery and refinement." - Jonathan Ive
+            </p>
+            <hr class="spacer">
+            <a href="/public/html/youtube.html" class="next-project fw-semi">
+                <h2>
+                    Next Project (Youtube Co-watch)
+                </h2>
+            </a>
+        </section>
+        <footer class="footer container">
+            <hr>
+
+            <div class="footer-title">
+                <h3>
+                    Designed and Developed by
+                    <a href="#">
+                        <span>
+                            Manish Pandey. <span id="pawan-putra">&#128018;</span>
+                        </span>
+                    </a>
+                    &#169 <span id="disabled">2023</span> 
+                </h3>
+            </div>
+            <div class="footer-socials">
+                <div class="socials-link-footer">
+                    <a href="">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-mail-send-line"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-github-line"></i>
+                    </a>   
+                </div>
+            </div>
+       </footer>
+
+      
+
+
+        
+        
+
+    </main>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js" integrity="sha512-VigP+/SyhNQ7m+09j8ue26TB1U76B/AnbaEkzT6R0Y+nOYR4GpwGZuL4ZfSPCuuVvpBNkVDOhy+R+38qtDEkWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="/public/script.js"></script>
+</body>
+</html>

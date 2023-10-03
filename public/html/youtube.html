@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/visamate.css">
+    <link rel="stylesheet" href="/public/css/about.css">
+    <title>Youtube Co-watch - Manish Pandey</title>
+</head>
+<body>
+
+    <div id="cursor-move-blur"></div>
+    <!-- <button id="lightmode-btn">
+        <div>
+            <i id="moon" class="ri-moon-clear-line"></i>
+            <i id="sun" class="ri-sun-line"></i>
+        </div>
+    </button> -->
+    <button id="btntotop">
+        <i class="ri-arrow-up-s-line"></i>
+    </button>
+    <aside>
+        <div class="aside-center">
+            <nav>
+                <div class="upper-nav">
+                    <div class="clock-center">
+                        <div id="navbarNav">
+                            <div class="clockanalog">
+                              <div class="hand hour" data-hour-hand></div>
+                              <div class="hand minute" data-minute-hand></div>
+                              <div class="hand second" data-second-hand></div>
+                              <div class="number number1">1</div>
+                              <div class="number number2">2</div>
+                              <div class="number number3">3</div>
+                              <div class="number number4">4</div>
+                              <div class="number number5">5</div>
+                              <div class="number number6">6</div>
+                              <div class="number number7">7</div>
+                              <div class="number number8">8</div>
+                              <div class="number number9">9</div>
+                              <div class="number number10">10</div>
+                              <div class="number number11">11</div>
+                              <div class="number number12">12</div>
+                            </div>
+                        </div>
+                        <div class="logo-name">
+                            <h3>manish pandey</h3>
+                        </div>
+                    </div>  
+                    <div class="nav-items">
+                        <svg class="svg_2" onclick="hideMenu()"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(229,229,229,1)"></path></svg>
+                        <ul>
+                            <!-- <li>
+                                <a class="active-tab" href="">
+                                    Home
+                                </a>
+                            </li> -->
+                            <li><a class="active-tab" href="/public/html/index.html">UX Projects</a></li>
+                            <li><a href="/public/html/webdesign.html">Templates</a></li>
+                            <li><a href="/public/html/resume.html">Resume</a></li>
+                            <li><a href="/public/html/about.html">About Me</a></li>
+                        </ul>
+                    </div>  
+                    <svg class="svg_1" onclick="openMenu()"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z" fill="rgba(236,234,234,1)"></path></svg>   
+                </div>
+                <div class="socials-link">
+                    <a href="">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-mail-send-line"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-github-line"></i>
+                    </a>   
+                </div>
+            </nav>
+        </div>  
+    </aside>
+
+    <main id="main-content">
+        <section id="ideation-sec" class="container">
+            <div class="banner">
+                <img src="/images/Youtube/Cowatch.webp" 
+                alt="Banner Image of the VisaMate App" loading="eager" 
+                class="img-full">
+            </div>
+            <div class="title-case pt-h2">
+                <div class="grid-1">
+                    <div class="grid-item-1">
+                        <h2 class="project-title">
+                            YouTube Co-Watch
+                        </h2>
+                    </div>
+                    <div class="grid-item-2">
+                        <a href="#final-prototype-impact">
+                            Scroll to Final Prototype
+                        </a>
+                    </div>
+                </div>
+                <h2 class="project-subtitle pt-h2">
+                    UX Design • User Research • Prototyping
+                </h2>
+                <p class="problem-title pt-h2 fw-semi">
+                    Enabling users to co-watch videos seamlessly using the existing YouTube platform.
+                </p>
+                <div class="grid-2 pt-p">
+                    <div class="grid-left">
+                        <h2 class="project-subtitle pt-h2">
+                            Project Timeline
+                        </h2>
+                        <ul class="margin-left pt-p">
+                            <li class="li-points">November 2022</li>
+                            <li class="li-points pt-p">4 Weeks</li>
+                        </ul>
+                    </div>
+                    <div class="grid-center">
+                        <h2 class="project-subtitle pt-h2">
+                            My Role
+                        </h2>
+                        <ul class="margin-left pt-p">
+                            <li class="li-points">Solo UX Designer</li>
+                            <li class="li-points pt-p">User Research</li>
+                        </ul>
+                    </div>
+                    <div class="grid-right">
+                        <h2 class="project-subtitle pt-h2">
+                            Tools Used
+                        </h2>
+                        <ul class="margin-left pt-p nested-grid">
+                            <li class="li-points">Figma</li>
+                            <li class="li-points">Google Forms</li>
+                            <li class="li-points pt-p">Figjam</li>
+                            <li class="li-points pt-p">Protopie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <div class="problem">
+                <h2 class="section-heading pt-h2">
+                    Problem
+                </h2>
+                <p class="problem-title pt-p">
+                    Distance often creates a challenge for people wanting to watch videos together with friends and family who are far away from them.
+                </p>
+                <p class="section-paragraph pt-p">  
+                    John, a new immigrant, feels alone being far away from his home. 
+                    He simply wants to spend quality time with his family by watching movies on YouTube. 
+                    Unfortunately, there's <span class="highlight">no intuitive way to co-watch</span> videos together.
+                </p>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <div class="how pt-h2">
+                <h2 class="pt-h2 how-large-title"> 
+                    How might we leverage the social aspect of connecting people via YouTube's watching sessions?
+                </h2>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Before diving into solution
+            </h2>
+            <p class="section-paragraph pt-p">
+                Before delving directly into the solution, I had curiosity regarding two crucial aspects: <br>
+                i) <span class="highlight">Alignment with YouTube's mission.</span> <br>
+                ii) Whether the feature <span class="highlight">holds a mutually beneficial impact.</span> 
+            </p>
+            <hr class="spacer">
+            <hr class="spacer">
+            <div class="img-wrapper pt-h2" id="center-place">
+                <figure>
+                    <img src="/images/Youtube/venn-chart.svg" alt=""
+                    class="img-full" id="size-img">
+                </figure>
+                <hr class="spacer">
+                <figcaption class="img-caption pt-h2">
+                    Img: Illustrating the needs of both users and YouTube on their respective ends.
+                </figcaption>
+            </div>
+            <hr class="spacer">
+            <p class="section-paragraph pt-p">
+                Understanding the needs of both sides, an introduction of co-watch feature would make 
+                a win-win situation.
+            </p>
+            <p class="problem-title pt-h2">
+                Users will gain the opportunity to enjoy their favorite videos alongside their 
+                loved ones, while YouTube stands to benefit from an increased user base and 
+                higher watch time on its platform.
+            </p>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Research and Findings
+            </h2>
+            <p class="section-paragraph pt-p">
+                Before moving on to the ideating different ideas, I asked 5 Youtube 
+                users how they managed to watch the videos together and some of the findings 
+                were bizzare. <br>
+                One user mentioned, <span class="highlight">
+                    "We used to watch movies by sharing screens while making calls on Facebook."
+                </span> 
+            </p>
+            <p class="problem-title pt-h2">
+                Now, let's envision this feature impacting YouTube's 2.9 billion active users, 
+                while also contributing positively to the platform's watch time.
+            </p>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Understanding the user flow
+            </h2>
+            <p class="section-paragraph pt-p">
+                Before implementing the feature, let's <span class="highlight">
+                    analyze the current user flow 
+                </span> of the 
+                youtube and <span class="highlight">try aligning the co-watch feature</span>  in it.
+            </p>
+            <hr class="spacer">
+            <div class="img-wrapper">
+                <figure>
+                    <img src="/images/Youtube/App Flow-Webflow.webp" alt=""
+                    class="img-full">
+                </figure>
+                <figcaption class="img-caption pt-p">
+                    Img: Current user flow of the youtube
+                </figcaption>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Brainstorming
+            </h2>
+            <p class="problem-title pt-h2">
+                Finding right path for user to create a room to co-watch their favorite ideas.
+            </p>
+            <hr class="spacer">
+            <div class="img-wrapper">
+                <figure>
+                    <img src="/images/Youtube/Co-watch Why.webp" 
+                    alt=""
+                    class="img-full">
+                </figure>
+                <figcaption class="img-caption pt-p">
+                    Img: Exploring various options for the placement of the co-watching feature.
+                </figcaption>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Deciding on the userflow
+            </h2>
+            <p class="section-paragraph pt-p">
+                After analyzing various ideas, <span class="highlight">
+                    the optimal location for the co-watch 
+                    feature 
+                </span>could be the existing <span class="highlight">
+                    create button
+                </span>  on the navigation bar.
+            </p>
+            <hr class="spacer">
+            <div class="img-wrapper">
+                <figure>
+                    <img src="/images/Youtube/App Flow-Webflow-added .webp" 
+                    alt=""
+                    class="img-full">
+                </figure>
+            </div>
+            <hr class="spacer">
+            <p class="problem-title pt-h2">  
+                Why did I choose to position the co-watch button within the create button?
+            </p>
+            <ul>
+                <li class="li-points section-paragraph margin-left pt-h2 fw-semi">
+                    Minimal Cognitive Load
+                </li>
+                <p class="section-paragraph pt-p margin-left">
+                    Placing the co-watch option within the create button reduces 
+                    cognitive load for users. They don't need to search for a separate 
+                    button or menu, streamlining their interaction with the platform.
+                </p>
+                <li class="li-points section-paragraph margin-left pt-h2 fw-semi">
+                    Consistency
+                </li>
+                <p class="section-paragraph pt-p margin-left">
+                    Placing the co-watch option alongside other creation-related actions 
+                    maintains a consistent design pattern which enhances the 
+                    overall user experience and avoids cluttering the interface with 
+                    multiple buttons.
+                </p>
+                <li class="li-points section-paragraph margin-left pt-h2 fw-semi">
+                    Space Utilization 
+                </li>
+                <p class="section-paragraph pt-p margin-left">
+                    The create button likely occupies a significant amount of navigation bar as all other buttons. 
+                    Utilizing this space efficiently by incorporating the co-watch option inside 
+                    the already existing create button makes efficient use of UI resources.
+                </p>
+            </ul>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Designing Wireframes
+            </h2>
+            <hr class="spacer">
+            <div class="grid-cowatch">
+                <div class="photos">
+                    <img src="/images/Youtube/HomePage .webp" 
+                    alt="Wireframe for the co-watch feature"
+                    class="img-full">
+                </div>
+                <div class="photos">
+                    <img src="/images/Youtube/create room feature .webp" 
+                    alt="Wireframe for the co-watch feature"
+                    class="img-full">
+                </div>
+                <div class="photos">
+                    <img src="/images/Youtube/room created.webp" 
+                    alt="Wireframe for the co-watch feature"
+                    class="img-full">
+                </div>
+                <div class="photos">
+                    <img src="/images/Youtube/Video-Play Screen.webp" 
+                    alt="Wireframe for the co-watch feature"
+                    class="img-full">
+                </div>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Iterating Designs
+            </h2>
+            <p class="section-paragraph pt-p">
+                After exploring various design concepts and engaging in a critique session 
+                with my designer colleague, the high-fidelity designs were created.
+            </p>
+            <hr class="spacer">
+            <div class="grid-cowatch" id="background_light">
+                <div class="photos">
+                    <img src="/images/Youtube/hifi-1.webp" 
+                    alt="Wireframe for the co-watch feature"
+                    class="img-full">
+                </div>
+                <div class="photos">
+                    <img src="/images/Youtube/hifi-2.webp" 
+                    alt="Wireframe for the co-watch feature"
+                    class="img-full">
+                </div>
+                <div class="photos">
+                    <img src="/images/Youtube/hifi-6.webp" 
+                    alt="Wireframe for the co-watch feature"
+                    class="img-full">
+                </div>
+                <div class="photos">
+                    <img src="/images/Youtube/hifi-3.webp" 
+                    alt="Wireframe for the co-watch feature"
+                    class="img-full">
+                </div>
+                <div class="photos">
+                    <img src="/images/Youtube/hifi-4.webp" 
+                    alt="Wireframe for the co-watch feature"
+                    class="img-full">
+                </div>
+                <div class="photos">
+                    <img src="/images/Youtube/hifi-5.webp" 
+                    alt="Wireframe for the co-watch feature"
+                    class="img-full">
+                </div>
+            </div>
+            <hr class="spacer">
+            <hr class="hr-case">
+            <h2 class="section-heading pt-h2">
+                Impact 
+            </h2>
+            <div class="grid-cowatch-impact pt-h2">
+                <div class="grid-left">
+                    <p class="problem-title pt-p">
+                        Increased User Base
+                    </p>
+                    <p class="section-paragraph pt-p">
+                        The availability of the co-watch feature would attract many new users 
+                        to the platform and contribute to YouTube's mission of enabling users to 
+                        share their content with the world.
+                    </p>
+                </div>
+                <div class="grid-left">
+                    <p class="problem-title pt-p">
+                        Increase in watch time
+                    </p>
+                    <p class="section-paragraph pt-p">     
+                    Watching long movies and videos on YouTube with friends and 
+                    family would significantly increase the platform's watch time.
+                    </p>
+                </div>
+                <div class="grid-left">
+                    <p class="problem-title pt-p">             
+                        Strengthening the social aspect of the platform
+                    </p>
+                    <p class="section-paragraph pt-p">     
+                        Given YouTube's status as a social platform, the co-watch feature will 
+                        undoubtedly contribute to fostering positive social interactions among users.
+                    </p>
+                </div>
+            </div>
+        </section> 
+        <hr class="spacer">
+        <hr class="hr-case">
+        <section id="final-prototype-impact">
+            <h2 class="section-heading pt-h2">
+                Final Prototype
+            </h2>
+            <hr class="spacer">
+            <div class="img-wrapper" id="final-prototype">
+                <iframe width="560" height="560" class="img-full"
+                src="https://www.youtube.com/embed/L0UsETTk5Xc" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                web-share" allowfullscreen></iframe>
+            </div>
+            <hr class="spacer">
+            <hr class="spacer">
+            <a href="/public/html/intern.html" class="next-project fw-semi">
+                <h2>
+                    Next Project (Fuselog)
+                </h2>
+            </a>
+        </section>
+        <footer class="footer container">
+            <hr>
+
+            <div class="footer-title">
+                <h3>
+                    Designed and Developed by
+                    <a href="#">
+                        <span>
+                            Manish Pandey. <span id="pawan-putra">&#128018;</span>
+                        </span>
+                    </a>
+                    &#169 <span id="disabled">2023</span> 
+                </h3>
+            </div>
+            <div class="footer-socials">
+                <div class="socials-link-footer">
+                    <a href="">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-mail-send-line"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-github-line"></i>
+                    </a>   
+                </div>
+            </div>
+       </footer>
+    </main>
+
+
+        
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="/public/script.js"></script>
+ </body>

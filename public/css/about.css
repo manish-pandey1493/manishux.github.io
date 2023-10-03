@@ -1,0 +1,325 @@
+html {
+    font-size: 62.5%;  
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    overflow-x: hidden;
+    color: var(--primary-txt);
+    background-color: var(--primary-bg);
+}
+
+
+.grid-about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    /* border: var(--border-2); */
+}
+
+.grid-about-item-right {
+    width: 100%;
+
+}
+.grid-about-item-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-wrapper {
+    width: 100%;
+}
+
+.img-wrapper-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.img-responsive {
+    width: 80%;    
+    border-radius: 0.5rem;
+    z-index: 5;
+}
+
+.img-wrapper>h3 {
+    font-size: var(--fs-600);
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.img-wrapper>p {
+    font-size: var(--fs-400);
+    color: var(--primary-txt);
+    line-height: 1.6;
+}
+
+.img-wrapper>p>a>span {
+    color: var(--brand-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+/* gallery section starts here => second half */
+.title-gallery {
+    padding-top: 4rem;
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+
+}
+.motor-bike {
+    width: 3rem;
+    position: absolute;
+    bottom: 0;
+    animation: bikemove 10s linear infinite;
+}
+
+@keyframes bikemove {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 120%;
+    }
+}
+
+.title-gallery>h3 {
+    font-size: var(--fs-600);
+    font-weight: 700;
+    color: var(--primary-txt);
+}
+
+
+.grid-gallery {
+    padding: 2rem 0;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
+    /* border: 2px solid blue; */
+}
+
+.grid-gallery-items {
+    width: 100%;
+    /* border: 2px solid white; */
+}
+
+.img-gallery {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    z-index: 5;
+}
+
+.bnt {
+    margin-top: 2rem;
+}
+
+#downloadButton {
+    position: relative;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: blue;
+    border-radius: 0.4rem;
+    color: #fff;
+    font-size: var(--fs-400);
+    font-weight: 500;
+}
+#downloadButton:hover {
+    background-color: rgb(82, 82, 248);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .grid-about-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .img-responsive {
+        width: 100%;    
+    }
+    .img-wrapper>p {
+        font-size: 1.2rem;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+/* CSS for resume.html Maintain this single stylesheet that contains all the resume page css */
+
+#main-content>a {
+    color: var(--primary-txt);
+}
+
+.resume-title {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid blue; */
+}
+
+.resume-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.resume-mp {
+    width: 40rem;
+    border-radius: 0.5rem;
+    z-index: 3;
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+.resume-mp:hover {
+    transform: scale(1.3);
+}
+
+.download-btn {
+    top: 15%;
+    right: 10%;
+    cursor: pointer !important;
+}
+
+.icn-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.icn-wrap>i {
+    font-size: var(--fs-700);
+}
+.title-download {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    /* border: 2px solid yellow; */
+}
+
+.title-download>h3 {
+    font-size: var(--fs-300);
+    font-weight: 500;
+}
+
+
+
+
+/* CSS for webdesign.html Maintain this single stylesheet that contains all the web-design page css */
+
+.marquee-title {
+    width: 100%;
+    padding-top: 2rem ;
+    /* border: 2px solid whitesmoke; */
+    overflow-x: hidden;
+}
+
+.marquee-title>h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--disabled-color);
+    opacity: 0.4;
+}
+
+.grid-webdesign {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .download-btn  {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    .pt-3 {
+        padding-top: 2rem;
+    }
+}
+
+
+@media (max-width:576px) {
+
+    .grid-gallery {
+        grid-template-columns: 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    .img-gallery {
+        width: 100%;
+        height: 100%;
+    }
+    .resume-mp {
+        width: 100%;
+       }
+}
+
+@media (min-width:577px) and (max-width:767px){
+
+}
+
+@media (min-width:767px) and (max-width:992px) {
+
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+  
+}
+
+@media (min-width:1400px) {
+    
+}

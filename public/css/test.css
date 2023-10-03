@@ -1,0 +1,24 @@
+.grid {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    border: 2px solid white;
+}
+
+.grid-items {
+    justify-self: center;
+    padding: 5rem 0;
+}
+.rec-clip {
+    width: 20rem;
+    height: 20rem;
+    background-color: blue;
+    margin-inline: auto;
+    margin-top: 2rem;
+    transition: 0.5s ease;
+}
+
+.rec-clip:hover {
+    clip-path: polygon(40% 10%, 80% 0%, 100% 80%, 30% 40%);
+}

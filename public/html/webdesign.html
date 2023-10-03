@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/about.css" />
+    <title>Templates-Manish Pandey</title>
+  </head>
+  <body>
+    <!-- magic-musa blur -->
+    <div id="cursor-move-blur"></div>
+
+    <!-- <button id="lightmode-btn">
+        <div>
+            <i id="moon" class="ri-moon-clear-line"></i>
+            <i id="sun" class="ri-sun-line"></i>
+        </div>
+    </button> -->
+
+    <!-- btntotop ko sqr effect and psf -->
+    <button id="btntotop">
+      <i class="ri-arrow-up-s-line"></i>
+    </button>
+
+    <!-- Aside menu - circ.inOut included in the max-width:768px -->
+    <aside>
+      <div class="aside-center">
+        <nav>
+          <div class="upper-nav">
+            <div class="clock-center">
+              <div id="navbarNav">
+                <div class="clockanalog">
+                  <div class="hand hour" data-hour-hand></div>
+                  <div class="hand minute" data-minute-hand></div>
+                  <div class="hand second" data-second-hand></div>
+                  <div class="number number1">1</div>
+                  <div class="number number2">2</div>
+                  <div class="number number3">3</div>
+                  <div class="number number4">4</div>
+                  <div class="number number5">5</div>
+                  <div class="number number6">6</div>
+                  <div class="number number7">7</div>
+                  <div class="number number8">8</div>
+                  <div class="number number9">9</div>
+                  <div class="number number10">10</div>
+                  <div class="number number11">11</div>
+                  <div class="number number12">12</div>
+                </div>
+              </div>
+              <div class="logo-name">
+                <h3>manish pandey</h3>
+              </div>
+            </div>
+            <div class="nav-items">
+              <svg
+                class="svg_2"
+                onclick="hideMenu()"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"
+                  fill="rgba(229,229,229,1)"
+                ></path>
+              </svg>
+              <ul>
+                <!-- <li>
+                                <a class="active-tab" href="">
+                                    Home
+                                </a>
+                            </li> -->
+                <li><a href="/public/html/index.html">UX Projects</a></li>
+                <li><a class="active-tab" href="#"> Templates</a></li>
+                <li><a href="/public/html/resume.html">Resume</a></li>
+                <li><a href="/public/html/about.html">About Me</a></li>
+              </ul>
+            </div>
+            <svg
+              class="svg_1"
+              onclick="openMenu()"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"
+                fill="rgba(236,234,234,1)"
+              ></path>
+            </svg>
+          </div>
+          <div class="socials-link">
+            <a href="">
+              <i class="ri-linkedin-line"></i>
+            </a>
+            <a href="">
+              <i class="ri-mail-send-line"></i>
+            </a>
+            <a href="">
+              <i class="ri-github-line"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <section class="ux-projects container">
+        <div class="section-title">
+          <h3 class="heading-folio">Templates</h3>
+        </div>
+        <div class="projects-grid container pt-3">
+          <div class="grid-item-1">
+            <div class="img-wrapper">
+              <a href="#">
+                <img
+                  src="/images/webdesign/template-1.webp"
+                  alt=""
+                  class="img-thumbnail"
+                />
+              </a>
+            </div>
+            <div class="description">
+              <h2>Product Designer Portfolio Template</h2>
+              <p>
+                Customizable template for product designer to build portfolio
+                landing page easily. Comes with source code.
+              </p>
+            </div>
+            <div class="bnt">
+              <a href="#" id="downloadButton" target="_blank">
+                Download Zip File
+              </a>
+            </div>
+          </div>
+          <div class="grid-item-1">
+            <div class="img-wrapper">
+              <a href="#">
+                <img
+                  src="/images/thumbnail_visamate.webp"
+                  alt=""
+                  class="img-thumbnail"
+                />
+              </a>
+            </div>
+
+            <div class="description">
+              <h2>
+                Hamro CSS Library
+                <span style="color: gray; font-size: 12px">(Coming Soon)</span>
+              </h2>
+              <p>
+                A beginner friendly css library that includes every things from
+                typography, spacing to responsive grid system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function downloadFolder() {
+        var link = document.createElement("a");
+        link.style.display = "none";
+        link.href =
+          "https://drive.google.com/file/d/1z2r5kifeIKjcsfCFpsXBN76HNYH576IS/view?usp=sharing";
+        link.download = "hamro_library _copy.zip";
+        link.target = "_blank";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+      var downloadButton = document.getElementById("downloadButton");
+      downloadButton.addEventListener("click", downloadFolder);
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="/public/script.js"></script>
+  </body>
+</html>
